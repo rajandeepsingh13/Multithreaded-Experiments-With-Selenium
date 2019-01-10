@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="myTestSuite" verbose="1">
+    <test name="myTest" parallel="instances" thread-count="4">
+        <classes>
+            <class name="Testing.Test1Factory"/>
+        </classes>
+    </test>
+    <test name="Export">
+        <classes>
+            <class name="Testing.ExportToExcel"/>
+        </classes>
+    </test>
+</suite>
